@@ -1,0 +1,6 @@
+1)Home-page(Main Page/front page)
+2)citywise-homePage(as per city wise home page)
+3)Login Page(for user login)
+4)Registration Page(for the registration)
+
+Make a admin page where user can update the citylist and citywise movie name and  

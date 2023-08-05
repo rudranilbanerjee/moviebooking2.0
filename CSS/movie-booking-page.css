@@ -1,0 +1,542 @@
+
+/* =============================Design for selected Movie details box=============================== */
+.selected-moviebox
+{
+	width:100vw;
+    height:max-content;
+	background-color: #1a2228;
+	display:grid;
+    grid-template-columns: 0.6fr max-content auto;
+    column-gap: 20px;
+    padding:60px 0;
+    position: relative;
+	font-family:times new roman;	
+}
+.movie-poster
+{
+	width:19vw;
+	height:55vh;
+	border-radius: 9px;
+	box-shadow: 7px 7px 8px #4e4b4a;
+    justify-self:center;
+}
+.movie-poster img{
+    width:19vw;
+	height:55vh;
+    grid-row: 1/ span 3;
+}
+.movie-details
+{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  padding-top: 30px;
+}
+.like{
+    display: flex;
+    font-size: 30px;
+    gap:10px;
+}
+.detail{
+    font-size:26px;
+    color:white;
+}
+.below-note{
+    font-size:19px;
+    color:white;
+    display: flex;
+    align-items: flex-end;
+}
+.movie_name
+{
+    color:#FF0080;
+	text-transform: capitalize;  
+	font-size: 40px;
+}
+.trailer-box{
+    justify-self: center;
+    height:315px;
+    width:560px;
+	box-shadow: 7px 7px 8px #4e4b4a;
+}
+.book-tickets
+{
+	width:11rem;
+	height:40px;
+	color:white;
+	background-color: #FF0080;
+	border-radius: 9px;
+	box-shadow: 0 0 30px #FF0080;
+	cursor:pointer;
+	font-size:25px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:50%;
+    margin-left:-5.5rem;
+    bottom: 30px;
+}
+
+
+
+
+/* ==============================Design for Available cities list for the selected movie========================= */
+.citylist{
+    width:60%; 
+    height:max-content;
+    background-color:#F5F5F5;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    left:50%;
+    margin-left:-30%;
+    top:30px;
+    padding: 10px 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    display:none;
+}
+.available-cities{
+    font-family:times new roman; 
+    font-size: 30px;
+    border-bottom:solid #FF0080 3px;
+    width:85%;
+}
+.citiesname{
+    display:flex; 
+    margin-top:25px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:15px;
+}
+.cityName{
+    width:12.5rem; 
+    height:2.5rem; 
+    border:solid #FF0080 2px;
+    border-radius:7px;
+    background:#FF0080;
+    box-shadow: 0 0 5px #FF0080; 
+    color:white;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:large;
+    padding:0 1rem;
+}
+#closeCityList{
+    margin-top: 0px;
+    background-color: transparent;
+    font-size: 1.87rem;
+    color: hsl(330, 100%, 50%);
+    border: none;
+    cursor: pointer;
+    right:9px;
+    position: absolute;
+    top:3px;
+}
+.message{
+    display:none;
+    margin-top:10px;
+    color:red;
+    font-size:18px;
+}
+
+
+
+/* ==============================Design for frame of Date and time selection as per selected movie======================== */
+.hall-list
+{
+	position:absolute;
+	width:70%;
+    height:max-content;
+	background-color:#4e4b4a;
+    left:50%;
+    margin-left:-35%;
+	top:80px;
+	display: none;
+    z-index:9999999999;
+}
+.hallListHeader{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hallListHeader .movieName{
+    margin:10px 50px; 
+    color:white;
+}
+#close1
+{ 
+    margin-right:15px;
+	background-color: transparent;
+	font-size:30px;
+	color:#FF0080;
+	border:none;
+	cursor: pointer;
+}
+.dateAndTimeBox{
+    width:100%; 
+    height:max-content;
+    background-color:#E0E0E0;
+    display:flex;
+    flex-wrap: wrap-reverse;
+    padding: 10px 15px;
+    align-items: center;
+    gap:24px;
+}
+.select-date
+{
+	width: 600px;
+	padding:10px 0px;
+	display: flex;
+	/* margin-left: 10px; */
+	/* margin-top: 13px; */
+    gap:10px;
+	overflow: auto;
+	cursor: pointer;
+    /* border: 1px solid black; */
+    scroll-behavior: smooth;
+
+}
+.date-for-booking
+{
+	font-weight: bold;
+	min-width:75px;
+	height:60px;
+	text-align: center;
+	border:solid #FF0080 2px;
+	border-radius:9px; 
+	font-size: 15px;
+	/* margin-left: 5px; */
+	color:black;
+	z-index: 1;
+}
+.select-date::-webkit-scrollbar{
+    display: none;
+}
+.btn-scroll1
+{
+	align-items:center;
+	font-size:50px;
+	cursor:pointer;
+	color:#FF0080;
+    background-color: #E0E0E0;
+	border:none;
+    /* margin:0 1rem; */
+}
+#btn-scroll-right1
+{
+ font-size: x-large;
+
+}
+#btn-scroll-left1
+{
+ font-size: x-large;
+}
+
+/* ==============================Date and time show design================================== */
+.date-time-box
+{
+    min-width:20vw;
+	font-family: "sagoe UI",sans-serif;
+	/* margin-left:100px; */
+	border:solid #FF0080 3px;
+	border-radius: 7px;
+	background:#FF0080;
+	box-shadow: 0 0 30px #FF0080;
+}
+.date
+{
+	font-size: 1.25rem;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.time
+{
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 0px;
+}
+
+
+
+
+/*=================Media query===================*/
+
+@media (max-width:1245px) {
+    .selected-moviebox {
+        display:grid;
+        grid-template-columns:1fr 3fr;
+        grid-template-rows: auto auto auto;
+        row-gap:30px;
+    }
+    .trailer-box {
+        grid-column:2/3;
+        grid-row:1/2;
+        justify-self:center;
+    }
+    .movie-details {
+        grid-column: 1/3;
+        grid-row:2/3;
+        justify-self:flex-start;
+        margin-left:100px;
+        padding:0;
+    }
+    .movie-poster{
+        justify-self:self-end;
+    }
+    .book-tickets{
+        position:unset;
+        grid-row:3/4;
+        grid-column:1/3;
+        justify-self: center;
+        margin:0;
+    }
+    .hall-list{
+        position:fixed;
+        top:20%;
+    }
+    .citylist{
+        position:fixed;
+        top:30%;
+        z-index:9999;
+    }
+}
+@media(max-width:1160px){
+    .movie-poster{
+        width:19vw;
+        height:29vw;
+    }
+    .movie-poster img{
+        width:100%;
+        height:100%;
+    }
+}
+@media(max-width:1022px){
+    .select-date{
+        width:58vw;
+    }
+    .dateAndTimeBox {
+        justify-content:center;
+    }
+}
+@media(max-width:940px){
+    .select-date{
+        width:50vw;
+    }
+}
+
+@media (max-width:1000px) {
+    .trailer-box{
+        height:30vw;
+        width:50vw;
+    }
+    .movie-poster{
+        width:23vw;
+        height:33vw;
+    }
+}
+@media (max-width:880px){
+    .movie-poster{
+        width:23vw;
+        height:33vw;
+        justify-self:center;
+    }
+    .selected-moviebox {
+        grid-template-columns: 1fr 1.5fr;
+        margin-bottom:1.2rem;
+    }
+}
+@media (max-width:770px){
+    .movie-poster{
+        width:27vw;
+        height:38vw;
+    }
+}
+@media (max-width:748px) {
+    .cityName{
+        width:8.5rem;
+    }
+}
+@media(max-width:650px){
+    .selected-moviebox {
+        grid-template-columns: 1fr 2.5fr;
+        gap:20px;
+    }
+    .trailer-box{
+        width:90%;
+        height:100%;
+    }
+    .movie-poster {
+        width: 70%;
+        height: 32vh;
+    }
+    .like{
+        font-size:1.6rem;
+        position:absolute;
+        top:1vh;
+        right:1rem;
+    }
+    .movie_name{
+        position: absolute;
+        top: 0;
+        left: 4vw;
+    }
+    .movie-details{
+        margin-top:20px;
+    }
+    #close1{
+        margin-right:5px;
+    }
+    .hallListHeader .movieName {
+        margin: 5px 15px;
+    }
+    .date-for-booking{
+        min-width:2.5rem;
+    }
+}
+@media(max-width:590px){
+    .selected-moviebox {
+        grid-template-columns: 1fr 2fr;
+        gap:0;
+    }
+    .movie-poster {
+        width: 90%;
+        height: 39vh;
+    }
+    .movie-details{
+        margin:1rem;
+    }
+}
+@media (max-width:570px) {
+    .select-date{
+        width:45vw;
+    }
+}
+@media (max-width:538px) {
+    .cityName{
+        width:5.5rem;
+    }
+}
+@media(max-width:500px){
+    .selected-moviebox {
+        grid-template-columns: 1.7fr 2fr;
+        grid-template-rows:auto auto;
+        row-gap:30px;
+    }
+    .trailer-box{
+        grid-column:1/3;
+        height:48vw;
+    }
+    .movie-poster{
+        grid-row:2/3;
+        grid-column:1/2;
+        width:35vw;
+    }
+    .movie-details{
+        grid-column:2/3;
+        margin:0;
+        padding-top:0;
+    }
+    .detail{
+        font-size:1.4rem;
+    }
+    .book-tickets{
+        top:75vh;
+    }
+}
+@media(max-width:500px){
+    .movie-poster{
+        height:50vw;
+    }
+}
+@media (max-width:470px) {
+    .btn-scroll1{
+        display:none;
+    }    
+    .select-date{
+        width:60vw;
+    }
+}
+@media (max-width:440px) {
+    .available-cities {
+        font-size: 22px;
+        width: 70%;
+    }
+}
+@media (max-width:410px) {
+    .time{
+        font-size:2rem;
+    }
+    .date{
+        font-size:1rem;
+    }
+}
+@media(max-width:370px){
+    .below-note{
+        display: none;
+    }
+    .selected-moviebox {
+        grid-template-columns: 1fr 1.5fr;
+        margin-bottom:0;
+        column-gap:1.2rem;
+    }
+    .cityName {
+        width: 4rem;
+        font-size: 0.8rem;
+        height:1.5rem;
+    }
+}
+@media (max-width:340px){
+    .movie-poster{
+        height:50vw;
+        width:30vw;
+    }
+    .detail{
+        font-size:1.3rem;
+    }
+    .selected-moviebox {
+        grid-template-columns: 1.4fr 2fr;
+        column-gap: 0rem;
+    }
+    .like {
+        top: 2vh;
+        left: 100%;
+        margin-left: -30%;
+        font-size: 1.4rem;
+    }
+    .below-note{
+        display:none;
+    }
+    .time{
+        font-size:1.5rem;
+    }
+    .date{
+        font-size:0.8rem;
+    }
+}
+@media (max-width:310px){
+    .movie-poster{
+        height:50vw;
+        width:30vw;
+    }
+    .selected-moviebox {
+        grid-template-columns: 1fr 2fr;
+        column-gap: 1rem;
+    }
+    .details{
+        font-size:1.2rem;
+    }
+    .trailer-box{
+        width:96%;
+    }
+    .below-note{
+        display:none;
+    }
+}
+

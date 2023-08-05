@@ -1,0 +1,65 @@
+.availableDate{
+    background-color:white; 
+    width:100%;
+    font-family:Times new roman; 
+    font-size:15px;
+}
+.sorryNoComp{
+    font-size:25px;
+    text-align:center;
+    padding:15px 30px;
+    background-color: #FF0080;
+}
+.availableComplex{
+    font-size:25px;
+    text-align:center;
+    margin-bottom:5px;
+    background-color: rgb(0, 98, 255);
+    color:white;
+}
+.hallDetails{
+    width:100%; 
+    height:max-content; 
+    border-bottom:solid #454545 1px; 
+    font-weight:bold; 
+    padding:10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.hallName{
+    color:black;
+    text-transform:uppercase;
+}
+.movieTimes{
+    display:flex; 
+    justify-content: flex-start;
+    gap:10px;
+    overflow:auto;
+}
+.movieTimes::-webkit-scrollbar{
+    display: none;
+}
+.showTime{
+    width:100px;
+    height:30px; 
+    border: solid #FF0080 2px; 
+    border-radius:7px; 
+    padding: 5px 15px;
+}
+.showTime:hover{
+    background-color: #FF0080;
+    color:white;
+    /* border:none; */
+}
+.timeMistake{
+    width:100%;
+    background-color:#fff;
+    height:300px;
+    padding:50px 60px;
+}
+.timesUp{
+    font-family:'Jenna Sue', sans-serif; 
+    font-size:46px;
+    padding: 0px 20px;
+}

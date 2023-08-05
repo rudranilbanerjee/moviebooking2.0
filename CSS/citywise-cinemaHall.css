@@ -1,0 +1,182 @@
+
+/* ====================================city wise movie box design=============================== */
+.city-wise-movie-box
+{
+	margin-top: 3rem;
+	width:100vw;
+	background-color: white;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	display:grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    row-gap: 40px;
+}
+.city-wise-movie-box .filters
+{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.city-wise-movie-box .movies
+{
+	width:70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+	text-align:center;
+    justify-self:end;
+}
+.city-wise-movie-box .movies h1
+{
+	text-align:center;
+    font-size: 30px;
+}
+.language
+{
+	display:flex;
+    justify-content: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.city-wise-movie-box .movies .language div
+{
+	width:5rem;
+	height:2rem;
+	border:solid red 2px;
+	background-color: #E0E0E0;
+	border-radius:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-wise-movie-box .coming-soon
+{
+	margin-top: 50px;
+	width:55vw;
+	height:80px;
+	background-color: #E0E0E0;
+	color:#FF0080;
+	border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+
+
+
+/* ================================Image Box design============================= */
+
+.image-box1
+{
+    grid-row: 2/ span 3;
+    grid-column: 1/span 3;
+	border:solid #FF0080 5px; 
+	border-radius: 18px;
+	width:90vw;
+	background-color: white;
+    justify-self: center;
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap:30px;
+}
+.image-box1 .recommended1 h1{
+    color:#454545; 
+    font-size: 30px; 
+    text-align:center;
+}
+.lang{
+    color:rgb(17, 3, 13); 
+    text-align: center;
+    font-size: 15px;
+}
+.arrangeMovieList{
+    width:95%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap:20px;
+}
+.valid-movie
+{
+	display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.valid-movie a{
+    color:#FF0080;
+    text-decoration: none;
+}
+.img-link1
+{
+    border-radius: 10px;
+}
+.valid-movie-name{
+    font-size: 20px;
+}
+
+/*====================Media query======================*/
+
+@media (max-width:850px) {
+    .city-wise-movie-box {
+        margin-top:0;
+    }
+}
+@media (max-width:520px) {
+    .img-link1{
+        width: 180px;
+        height: 270px;
+    }
+    .city-wise-movie-box .movies{
+        width:60vw;
+    }
+    .city-wise-movie-box .coming-soon {
+        display: none;
+    }
+    .city-wise-movie-box {
+        row-gap:30px;
+    }
+}
+@media (max-width:465px) {
+    .img-link1{
+        width:150px;
+        height:250px;
+    }
+}
+@media (max-width:400px) {
+    .arrangeMovieList {
+        column-gap:10px;
+    }
+    .city-wise-movie-box .filters {
+        display: none;
+    }
+    .city-wise-movie-box {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .city-wise-movie-box .movies{
+        width:90vw;
+    }
+}
+@media (max-width:370px) {
+    .img-link1{
+        width:120px;
+        height:190px;
+    }
+    .arrangeMovieList {
+        column-gap:0px;
+    }
+}

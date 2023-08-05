@@ -1,0 +1,90 @@
+*
+{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+body
+{
+	background-color:#FF0080; 
+	/* text-align: center; */
+    display: flex;
+	justify-content: center;
+    align-items: center;
+}
+.payment-box
+{
+	width:60%;
+	height:500px;
+	background-color: #E0E0E0;
+	text-align: center;
+	margin-top:70px;
+	border-radius: 5px;
+	padding:25px 15px;
+}
+.border{
+	height:450px;
+	border: solid #FF0080 5px;
+	border-radius: 9px;
+}
+.info-join{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.box1
+{
+    width: 50%;
+	padding:10px 0px;
+	text-align: left;
+	font-size: 18px;
+}
+.info-item{
+    color:#FF0080;
+    margin-top: 7px;
+}
+
+.decoration
+{
+	text-transform:capitalize;
+	color:black;
+}
+.box2
+{
+    width: 50%;
+	padding:10px 0px;
+	text-align:right;
+	font-size: 18px;
+}
+.log-in-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.left{
+    grid-column: 1/2;
+    grid-row:1/2;
+}
+.right{
+    grid-column: 2/3;
+    grid-row:1/2;
+    justify-self:start;
+}
+.submitBtn{
+    grid-column: 1/3;
+    grid-row:2/3;
+    justify-self: center;
+}
+.log-in-form input
+{
+	background: #C0C0C0;
+	width: 95%;
+	height: 40px;
+	font-size: 15px;
+	border:solid #FF0080 1px;
+	border-radius: 7px;
+	margin: 3px auto;
+	margin-top: 15px; 
+	padding: 8px 0 8px 8px;
+
+}
